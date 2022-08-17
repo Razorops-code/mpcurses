@@ -1,0 +1,11 @@
+
+tasks:
+  unit-test:
+    runner: razorci/python:3.10
+    steps:
+    - checkout
+    - commands:
+      - python3 -m venv venv 
+      - source venv/bin/activate
+      - pip install pybuilder
+      - pyb
